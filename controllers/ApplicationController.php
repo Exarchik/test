@@ -1,4 +1,9 @@
 <?php
+/*
+namespace test\library\Controller;
+
+use test\library\Controller;
+*/
 /**
  * Description
  *

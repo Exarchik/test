@@ -1,4 +1,11 @@
 <?php
+/*
+use test\library\InputData;
+use test\library\Controller;
+use test\library\Controller\ApplicationController;
+use test\library\Error;
+*/
+
 // add libraries
 require_once('config/main.php');
 require_once('library/inputdata.php');

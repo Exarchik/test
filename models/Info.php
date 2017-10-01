@@ -1,4 +1,7 @@
 <?php
+
+namespace test\Models;
+
 /**
  * Description 
  *

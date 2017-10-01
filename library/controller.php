@@ -1,4 +1,7 @@
-﻿<?php
+<?php
+/*
+namespace test\library;
+*/
 /**
  * Description
  *
@@ -8,6 +11,10 @@ class Controller{
     
     public $controllerName = "application";
 	
+    public static function test($var){
+        print "test: $var";
+    }
+    
     public function getClassName(){
         return get_class($this);
     }

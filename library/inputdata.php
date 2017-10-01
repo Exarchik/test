@@ -1,4 +1,8 @@
 <?php
+/*
+namespace test\library;
+*/
+
 /**
  * Description 
  *
