@@ -1,10 +1,9 @@
 <?php
-/*
+
 namespace test\library;
-*/
 
 /**
- * Description 
+ * Description
  *
  * @author dmitriy.fedosenko
  */
@@ -33,7 +32,7 @@ class InputData {
             return $_SERVER[$parameter];
         }
     }
-    
+
     public static function request($parameter = '') {
         if (empty($parameter)) {
             return $_REQUEST;

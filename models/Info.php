@@ -1,18 +1,20 @@
 <?php
 
-namespace test\Models;
+namespace test\models;
+
+use test\library\InputData;
 
 /**
- * Description 
+ * Description
  *
  * @author dmitriy.fedosenko
  */
 class InfoModel {
-    
+
     public $info;
-    
+
     public function getData(){
-        
+
         $this->info = InputData::request();
         return $this->info;
     }

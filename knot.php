@@ -1,10 +1,8 @@
 <?php
-/*
+
 use test\library\InputData;
 use test\library\Controller;
-use test\library\Controller\ApplicationController;
 use test\library\Error;
-*/
 
 // add libraries
 require_once('config/main.php');
@@ -18,6 +16,7 @@ $actionName = InputData::action();
 
 // get controller class name, action method name and path to current controller
 $controllerClassName = ucfirst(strtolower($controllerName))."Controller";
+$controllerClassNameNS = "test\\controller\\".$controllerClassName;
 $actionMethodName = "action".ucfirst(strtolower($actionName));
 $controllerPath  = "controllers/$controllerClassName.php";
 
@@ -25,7 +24,5 @@ $controllerPath  = "controllers/$controllerClassName.php";
 if (file_exists($controllerPath)){
     require_once($controllerPath);
 } else {
-    Error::fileNotExist($controllerPath); 
+    Error::fileNotExist($controllerPath);
 }
-
-
