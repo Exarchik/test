@@ -13,15 +13,15 @@ use test\models\InfoModel;
  */
 class ApplicationController extends Controller{
 
-    public $controllerName = 'application';
+  public $controllerName = 'application';
 
-    public function actionDefault(){
+  public function actionDefault(){
 
-        require_once(MainConfig::$baseDir."/models/info.php");
-        $model = new InfoModel();
+    require_once(MainConfig::$baseDir."/models/info.php");
+    $model = new InfoModel();
 
 
-        $this->render("default",[$model->getData()]);
-    }
+    $this->render("default",[$model->getData()]);
+  }
 
 }
