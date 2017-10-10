@@ -12,6 +12,7 @@ use test\config\MainConfig;
 class Controller{
 
   public $controllerName = "application";
+  public $controllerData;
 
   public function getClassInfo(){
     return print_r($this,1);
