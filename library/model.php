@@ -11,6 +11,7 @@ use test\config\MainConfig;
  */
 class Model{
 
+  public $modelData;
   public $modelName;
 
   public function getClassInfo(){
