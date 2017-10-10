@@ -14,7 +14,7 @@ class Controller{
   public $controllerName = "application";
 
   public function getClassInfo(){
-    return print_r($this);
+    return print_r($this,1);
   }
 
   public function getClassName(){

@@ -15,7 +15,7 @@ class Model{
   public $modelName;
 
   public function getClassInfo(){
-    return print_r($this);
+    return print_r($this,1);
   }
 
   public function getClassName(){
