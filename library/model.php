@@ -12,7 +12,7 @@ use test\config\MainConfig;
 class Model{
 
   public $modelData;
-  
+  public $modelActions;
   public $modelName;
 
   public function getClassInfo(){
