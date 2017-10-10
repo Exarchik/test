@@ -11,6 +11,8 @@ $controller = new $controllerClassNameNS();
 // run current action
 $controller->$actionMethodName();
 
+print $controller->getClassName();
+
 // debug
 print $controller->getClassName();
 print "<br/> controller: $controllerClassName <br/> controllerNS: $controllerClassNameNS
